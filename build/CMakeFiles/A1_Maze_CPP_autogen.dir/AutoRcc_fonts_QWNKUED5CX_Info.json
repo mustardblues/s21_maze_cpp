@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/mustardblues/s21_maze_cpp/build/A1_Maze_CPP_autogen",
+	"CMAKE_BINARY_DIR" : "/home/mustardblues/s21_maze_cpp/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/mustardblues/s21_maze_cpp/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/mustardblues/s21_maze_cpp/src",
+	"CMAKE_SOURCE_DIR" : "/home/mustardblues/s21_maze_cpp/src",
+	"INCLUDE_DIR" : "/home/mustardblues/s21_maze_cpp/build/A1_Maze_CPP_autogen/include",
+	"INPUTS" : [ "/home/mustardblues/s21_maze_cpp/src/view/fonts/PIXY.ttf" ],
+	"LOCK_FILE" : "/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP_autogen.dir/AutoRcc_fonts_QWNKUED5CX_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "fonts" ],
+	"OUTPUT_CHECKSUM" : "QWNKUED5CX",
+	"OUTPUT_NAME" : "qrc_fonts.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP_autogen.dir/AutoRcc_fonts_QWNKUED5CX_Used.txt",
+	"SOURCE" : "/home/mustardblues/s21_maze_cpp/src/view/fonts/fonts.qrc",
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "/home/mustardblues/s21_maze_cpp/build/A1_Maze_CPP_autogen",
+	"CMAKE_BINARY_DIR" : "/home/mustardblues/s21_maze_cpp/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/mustardblues/s21_maze_cpp/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/mustardblues/s21_maze_cpp/src",
+	"CMAKE_SOURCE_DIR" : "/home/mustardblues/s21_maze_cpp/src",
+	"INCLUDE_DIR" : "/home/mustardblues/s21_maze_cpp/build/A1_Maze_CPP_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/mustardblues/s21_maze_cpp/src/view/images/load.png",
+		"/home/mustardblues/s21_maze_cpp/src/view/images/alice.gif",
+		"/home/mustardblues/s21_maze_cpp/src/view/images/gear.png",
+		"/home/mustardblues/s21_maze_cpp/src/view/images/save.png"
+	],
+	"LOCK_FILE" : "/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP_autogen.dir/AutoRcc_images_OFI3UCXW5C_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "OFI3UCXW5C",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP_autogen.dir/AutoRcc_images_OFI3UCXW5C_Used.txt",
+	"SOURCE" : "/home/mustardblues/s21_maze_cpp/src/view/images/images.qrc",
+	"VERBOSITY" : 0
+}
