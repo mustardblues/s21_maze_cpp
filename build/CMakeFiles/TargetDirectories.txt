@@ -1,8 +1,0 @@
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/edit_cache.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/rebuild_cache.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/list_install_components.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/install.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/install/local.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/install/strip.dir
-/home/mustardblues/s21_maze_cpp/build/CMakeFiles/A1_Maze_CPP_autogen.dir

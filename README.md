@@ -1,1 +1,1 @@
-# s21_maze_cpp
+![alt text](misc/maze.gif)

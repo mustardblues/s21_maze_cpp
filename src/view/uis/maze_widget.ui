@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MazeWidget</class>
+ <widget class="QWidget" name="MazeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>0</y>
+     <width>220</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0, 5);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="main_page">
+    <widget class="QPushButton" name="settings_button">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>58</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(0,  0, 0, 0);
+
+	image: url(:/images/gear.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menu_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(27,  27, 27, 255);
+
+	color: white;
+	text-align: left;
+
+	font: 14px &quot;PIXY&quot;;
+}
+
+QPushButton:pressed {
+	color: black;
+    background-color:  rgba(200, 200, 200, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string> Menu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="create_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(27,  27, 27, 255);
+
+	color: white;
+	text-align: left;
+
+	font: 14px &quot;PIXY&quot;;
+}
+
+QPushButton:pressed {
+	color: black;
+    background-color:  rgba(200, 200, 200, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string> Create</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="load_button">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>58</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(0,  0, 0, 0);
+
+	image: url(:/images/load.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_button">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>58</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(0,  0, 0, 0);
+
+	image: url(:/images/save.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="find_path_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>205</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(27,  27, 27, 255);
+
+	color: white;
+	text-align: left;
+
+	font: 14px &quot;PIXY&quot;;
+}
+
+QPushButton:pressed {
+	color: black;
+    background-color:  rgba(200, 200, 200, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string> Find path</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="width_value_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(0,  0, 0, 0);
+
+color: black;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string>Width: 0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="width_slider">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>105</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove::horizontal{
+	background-color: rgba(27,  27, 27, 255);
+
+}
+
+QSlider::handle::horizontal{
+	height: 30px;
+	width: 10px;
+
+	background-color: rgba(27,  27, 27, 255);
+
+}
+
+QSlider::add-page::horizontal{
+	height: 30px;
+	width: 10px;
+
+	background-color: rgb(180, 180, 180);
+
+}</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="height_value_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(0,  0, 0, 0);
+
+color: black;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string>Height: 0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="height_slider">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>155</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove::horizontal{
+	background-color: rgba(27,  27, 27, 255);
+
+}
+
+QSlider::handle::horizontal{
+	height: 30px;
+	width: 10px;
+
+	background-color: rgba(27,  27, 27, 255);
+
+}
+
+QSlider::add-page::horizontal{
+	height: 30px;
+	width: 10px;
+
+	background-color: rgb(180, 180, 180);
+
+}</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="step_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>690</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(255,  0, 0, 255);
+
+color: white;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string> Waiting...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="settings_page">
+    <widget class="QComboBox" name="solve_algorithm_box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(27,  27, 27, 255);
+
+color: white;
+text-align: left;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>DFS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BFS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Q_learning</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="solve_algorithm_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>105</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(0,  0, 0, 0);
+
+color: black;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string> Find path algorithm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>155</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: solid;
+
+	background-color: rgba(27,  27, 27, 255);
+
+	color: white;
+	text-align: left;
+
+	font: 14px &quot;PIXY&quot;;
+}
+
+QPushButton:pressed {
+	color: black;
+    background-color:  rgba(200, 200, 200, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string> Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="create_algorithm_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(0,  0, 0, 0);
+
+color: black;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string> Create algorithm</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="create_algorithm_box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;PIXY&quot;;
+
+border: solid;
+
+background-color: rgba(27,  27, 27, 255);
+
+color: white;
+text-align: left;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Eller</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

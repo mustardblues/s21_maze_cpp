@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="images">
+        <file>alice.gif</file>
+        <file>gear.png</file>
+        <file>load.png</file>
+        <file>save.png</file>
+    </qresource>
+</RCC>
