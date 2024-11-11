@@ -1,10 +1,12 @@
-# School 21 project A1_MAZE_CPP
+# School 21 A1_MAZE_CPP
 ## Description:
-The projetc creates and loads mazes (eller's algorithm) and caves (cellular automation). Find solution to the maze using DFS, BFS algorithms and ML (Q-learning).
+The program is written in C++ and uses the Qt framework for GUI.
+
+The programm creates and loads mazes (eller's algorithm) and caves (cellular automation). Find solution to the maze using DFS, BFS algorithms and ML (Q-learning).
 
 ## Install and start:
 ```
-make install && cd build && ./A1_Maze_CPP
+make install && cd build && ./A1_Maze_CPP && cd ..
 ```
 ## Presentation:
 ![alt text](misc/maze.gif)
