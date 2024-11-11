@@ -4,9 +4,7 @@ The projetc creates and loads mazes (eller's algorithm) and caves (cellular auto
 
 ## Install and start:
 ```
-make install
-cd build
-./A1_Maze_CPP
+make install && cd build && ./A1_Maze_CPP
 ```
 ## Presentation:
 ![alt text](misc/maze.gif)
