@@ -1,4 +1,4 @@
-# School 21 A1_MAZE_CPP
+# School 21 A1_Maze_CPP
 ## Description:
 The program is written in C++ and uses the Qt framework for GUI.
 
