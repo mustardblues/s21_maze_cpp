@@ -2,7 +2,7 @@
 ## Description:
 The program is written in C++ and uses the Qt framework for GUI.
 
-The program creates and loads mazes (eller's algorithm) and caves (cellular automaton). Find solution to the maze using DFS, BFS algorithms and ML (Q-learning).
+The program creates and loads mazes (eller's algorithm) and caves (cellular automaton). Finds solution to the maze using DFS, BFS algorithms and ML (Q-learning).
 
 ## Install and start:
 ```
